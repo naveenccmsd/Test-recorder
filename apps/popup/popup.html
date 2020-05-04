@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html><head>
+    <title>Quick Access Extension</title>
+ <link rel="stylesheet" href="popup.css">
+ <link rel="stylesheet" href="bulma.min.css">
+</head>
+<body>
+  <div class="field">
+    <div class="control">
+     
+    <div class="control">
+      
+    </div>
+  </div>
+  <div class="field is-grouped">
+    <div class="control">
+      <button class="button is-link" id="reset">reset</button>
+    </div>
+    <div class="control">
+      <button class="button is-link is-light" id="refresh">refresh</button>
+    </div>
+    <div class="control">
+      <input class="input" type="text" placeholder="Text input" id="search" value="" />
+      <button class="button is-link is-light" id="search_btn">Find</button>
+    </div>
+  </div>
+
+ <article class="message is-dark">
+  <div class="message-header">
+    <p>Question</p>
+    <button class="delete" aria-label="delete"></button>
+  </div>
+  <div class="message-body">
+    <div id="question"></div>
+  </div>
+</article>
+<article class="message is-success">
+  <div class="message-header">
+    <p>Correct Answer</p>
+    <button class="delete" aria-label="delete"></button>
+  </div>
+  <div class="message-body">
+    <div id="f_ans"></div>
+  </div>
+</article>
+
+<article class="message is-danger">
+  <div class="message-header">
+    <p>Wrong Anser</p>
+    <button class="delete" aria-label="delete"></button>
+  </div>
+  <div class="message-body">
+    <div id="f_wrong"></div>
+  </div>
+</article>
+
+<div class="field">
+     
+    <div class="control">
+       <button class="button" id="export">Export</button>
+    </div>
+    <div class="control">
+        <input class="input" type="text" placeholder="Text input" id="import_str" value="" />
+       <button class="button" id="import">Import</button>
+    </div>
+  </div>
+ <!--  <div class='loader'>
+    <div>
+      <div class='loader-box-container'>
+        <div class='square-grid-pulse'>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- <iframe id="quick_access_extension_frame"></iframe> -->
+   <script src="jquery-2.2.3.min.js"></script>
+
+  <script src="popup.js"></script>   
+</body>
+</html>
